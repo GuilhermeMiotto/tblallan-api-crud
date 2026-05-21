@@ -1,0 +1,63 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "novo@example.com",
+  "name": "Novo Usuário",
+  "password": "senha123"
+}
+
+###
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/1
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "Novo Post",
+  "content": "Conteúdo do novo post",
+  "published": true,
+  "authorId": 1
+}
+
+###
+
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/posts/1
+
+###
+
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Nome Atualizado"
+}
+
+###
+
+PATCH http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "title": "Título Atualizado",
+  "published": false
+}
+
+###
+
+DELETE http://localhost:3000/posts/1
+
+###
+
+DELETE http://localhost:3000/users/1
